@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do App</title>
+</head>
+<body>
+<h1>To-Do App</h1>
+
+<form action="">
+
+    <div>
+        <label for="title">ToDo Title</label>
+        <input type="text" name="title" placeholder="Enter to do..">
+        <br>
+        <button type="submit">Add</button>
+    </div>
+</form>
+
+        {% for todo in todo_list %}
+            <p>{{todo.id}} | {{todo.title}}</p>
+        {% endfor %}
+
+</body>
+</html>
